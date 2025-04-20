@@ -102,6 +102,23 @@ PAGESPEED_API_KEY=AIzaSyXXXXXXXXXXXXXXX
 ```
 Nunca compartas tu API Key públicamente.
 
+
+## 📤 Resultados
+Los resultados se guardan en un archivo llamado:
+
+```python
+pagespeed_results.csv
+```
+
+Este archivo contendrá columnas como:
+* url
+* timestamp
+* performance_score
+* first-contentful-paint
+* largest-contentful-paint
+* interactive
+* cumulative-layout-shift
+
 ## 🧪 Ejemplo de Ejecución
 ```text
 🚀 PageSpeed Insights Analyzer v2.0
@@ -123,3 +140,24 @@ Nunca compartas tu API Key públicamente.
 ✅ Archivo guardado en: /Users/tu_usuario/Downloads/POWER BI/pagespeed_results.csv
 
 ```
+
+## 🛠️ Posibles Errores y Soluciones
+
+| Error                          | Solución                                                                 |
+|-------------------------------|--------------------------------------------------------------------------|
+| ❌ No encontrada API Key       | Asegúrate de tener el archivo `.env` con tu clave correcta.              |
+| Error en la API para URL      | Verifica que la URL exista y sea válida.                                 |
+| ❌ Formato de URL inválido    | Asegúrate de incluir el protocolo `http://` o `https://`.                |
+| ❌ Error inesperado           | Revisa el archivo `pagespeed.log` para más detalles.                     |
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la **MIT License**.  
+Puedes usarlo, modificarlo y compartirlo libremente, siempre y cuando mantengas los créditos originales.
+
+---
+
+¡Gracias por usar **PageSpeed Insights Analyzer**!  
+Si te fue útil, considera darle una ⭐ en GitHub.
